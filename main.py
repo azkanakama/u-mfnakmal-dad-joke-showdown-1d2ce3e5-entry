@@ -1,4 +1,16 @@
-"""Write this entry's dad joke to /output/entry.txt."""
+"""Dad joke entry writer.
+
+This standard-library-only script writes exactly one dad joke, no longer than
+200 characters, to /output/entry.txt for the make.fun Dad Joke Showdown.
+
+The joke text lives in the JOKE constant and is written as-is (no trailing
+newline), so the file contains just the single joke. Running the script creates
+the output directory if needed and exits with an error if the joke ever grows
+past the 200-character limit.
+
+Usage:
+    python3 main.py
+"""
 
 from pathlib import Path
 
